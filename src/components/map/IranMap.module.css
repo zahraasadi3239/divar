@@ -1,0 +1,18 @@
+/* src/components/map/IranMap.module.css */
+.wrapper { width: 100%; display:flex; justify-content:center; gap:12px; }
+.mapSvg { width: 720px; height: auto; cursor: pointer; }
+.path {
+  fill: #f7f7f7;
+  stroke: #bdbdbd;
+  stroke-width: 1.4;
+  transition: fill .15s, transform .12s;
+}
+.path:hover { fill: #f0eded; transform: scale(1.01); }
+.selected { fill: #ff6b5f !important; stroke: #c0392b !important; }
+.infoBox {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  align-self: start;
+}

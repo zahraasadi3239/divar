@@ -1,0 +1,53 @@
+.wrapper {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 3000;
+}
+
+.topBar {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  border-bottom: 1px solid #ddd;
+  background: #fafafa;
+}
+
+.mapBox {
+  flex: 1;
+  position: relative;
+}
+
+.marker {
+  width: 28px;
+  height: 28px;
+  background: red;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.bottom {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  background: #fafafa;
+  text-align: center;
+}
+
+.confirm {
+  margin-top: 8px;
+  width: 100%;
+  padding: 12px;
+  background: #d32f2f;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
