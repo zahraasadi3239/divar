@@ -1,94 +1,54 @@
-# React + Vite
+# Divar Clone — React Marketplace Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end marketplace application inspired by Divar, built with React and modern front-end tools. The project focuses on creating an interactive classified-ads experience, with user authentication flows, advertisement browsing, and role-based interfaces.
 
-Currently, two official plugins are available:
+## 🔗 Project Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-///////////////
-# Divar Clone – Portfolio Project
-
-A full-featured clone of **Divar.ir**, built as a **resume-grade portfolio project** to demonstrate real-world front-end development skills, authentication flows, role-based access control, and integration with a custom backend.
-
-This project closely mimics the behavior and user experience of the original Divar platform.
-
----
-
-## 📌 Project Overview
-
-This application allows users to log in using a mobile number and OTP authentication, browse and create advertisements, and access different parts of the app based on their role (User or Admin).
-
-The project includes both **frontend and backend implementations**, making it a complete, production-like application.
-
----
+- **GitHub Repository:** https://github.com/zahraasadi3239/divar
+- **Live Demo:** Add the deployed application URL here, if available.
 
 ## ✨ Features
 
-### 🔐 Authentication & Authorization
-- Login with mobile number (OTP-based authentication)
-- Access token & refresh token handling
-- Secure logout functionality
-- Protected routes
-- Role-based access control (User / Admin)
+### 🔐 Authentication and Authorization
 
-### 👤 User Features
-- City selection
-- View advertisements
-- Create new advertisements
-- User dashboard
-- Account dropdown menu
+- Mobile-number login interface with OTP verification
+- Authentication state management
+- Protected routes for restricted pages
+- User and admin interface separation
+- Logout functionality
 
-### 🛠 Admin Features
-- Dedicated admin panel
-- Admin-only protected routes
-- Advertisement management
-- User management
+### 🏷️ Marketplace Features
 
-> 🔑 **Admin Test Account**  
-> Use the following mobile number to log in as an admin:
->
-> **09180009988**
+- Browse advertisements
+- Select a city
+- Create advertisements
+- Access a user dashboard
+- Navigate account-related options
 
----
+### 🛠️ Admin Interface
 
-## 🧰 Tech Stack
+- Dedicated admin interface
+- Restricted admin routes
+- Advertisement management interface
+- User management interface
 
-### Frontend
-- React
-- React Router
-- Redux Toolkit
-- TanStack React Query
-- CSS Modules
-- React Toastify
+*Feature availability may depend on the backend service and its configuration.*
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- JWT (Access & Refresh Tokens)
-- OTP Authentication
-- Role-Based Authorization (RBAC)
+## 🧰 Technologies Used
 
-> The backend is fully implemented and included in the repository.
+- **React** — Component-based UI development
+- **React Router** — Client-side routing
+- **Redux Toolkit** — Application state management
+- **TanStack React Query** — Server-state management and data fetching
+- **CSS Modules** — Component-scoped styling
+- **React Toastify** — User notifications
+- **Vite** — Development server and build tooling
 
----
+## 🏗️ Project Structure
 
-## 🔄 Application Flow
+The frontend source code is organized into reusable components, pages, state management, services, routing, utilities, and styling.
 
-1. User enters mobile number
-2. OTP is sent from the backend
-3. User verifies OTP
-4. Access & refresh tokens are stored
-5. User profile is fetched
-6. Role is determined (User or Admin)
-7. Routes are protected based on role
-
----
-
-## 📁 Project Structure (Frontend)
-
-```txt
+```text
 src/
 ├── components/
 ├── pages/
@@ -97,24 +57,77 @@ src/
 ├── utils/
 ├── routes/
 └── styles/
-//
-▶️ Getting Started
-Install dependencies
+```
+
+The exact contents of each directory may vary according to the current implementation.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/zahraasadi3239/divar.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd divar
+```
+
+### 3. Install dependencies
+
+```bash
 npm install
+```
 
-Run the project
+### 4. Start the development server
+
+```bash
 npm run dev
+```
 
-🧠 Notes
+Open the local URL printed by Vite in your terminal.
 
-This project is built with a focus on clean architecture and best practices
+## 🔌 Backend Configuration
 
-Authentication and authorization logic are fully functional
+Some application features, such as OTP authentication, user information, advertisements, and admin operations, may require a backend service.
 
-The admin panel is protected both on UI and route level
+If a backend is required, configure the appropriate API URL and environment variables according to the project's existing configuration. Do not publish passwords, private API keys, access tokens, or real user credentials in the repository.
 
-Designed to simulate a real production environment
+## 🎯 Project Goals
 
-🎯 Purpose
+This project was developed to practice and demonstrate:
 
-This project was developed as a portfolio project to showcase practical front-end development skills using modern React tools and real backend integration.
+- Building reusable React components
+- Managing application state with Redux Toolkit
+- Fetching and managing API data with TanStack React Query
+- Implementing client-side routing and protected pages
+- Organizing frontend code into maintainable modules
+- Building marketplace-style user interfaces
+- Integrating frontend features with API services
+
+## 🔮 Future Improvements
+
+- Add or improve automated tests
+- Improve accessibility and keyboard navigation
+- Refine responsive layouts
+- Enhance loading, error, and empty states
+- Document backend setup and environment variables, if applicable
+
+## 👩‍💻 Author
+
+**Zahra Asadi**
+
+Front-End Developer focused on building responsive web applications with JavaScript, React, and Next.js.
+
+- **GitHub:** https://github.com/zahraasadi3239
+
+## 📄 License
+
+Add the license information here once the repository's license has been confirmed.
